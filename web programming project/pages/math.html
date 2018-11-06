@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" type="image/png" href="../images/logo.png">
+	<link rel="stylesheet" href="../styles/index.css">
+	<script src="../script/updatedscript.js"></script>
+	<title>Math Wiz</title>
+</head>
+<body>
+	<div class="mainContainer">
+
+		<header class="header">
+
+			<div class="titlebar">
+				<h1>Math Wiz</h1>
+			</div>
+
+		</header>
+		
+		<div class="mainBody">
+
+			<div class="sidebar">
+				
+				<button id="icon1" onclick="operator('minus')">
+						<img src="../images/subtract.png" alt="subtract" >
+				</button>
+
+				<button id="icon2" onclick="operator('plus')">
+					<img src="../images/plus.png" alt="subtract"  >
+				</button>
+
+				<button id="icon3" onclick="operator('multiply')">
+					<img src="../images/multiply.png" alt="subtract"  >
+				</button>
+
+				<button id="icon4" onclick="operator('divide')">
+					<img src="../images/divide.png" alt="subtract"  >
+				</button>
+
+			</div>
+			
+			<div id="display">
+				<div class="point">
+					<p id="points"></p>
+					<p id="level"></p>
+				</div>
+				
+				<div class="operation">
+
+					<div class="numbers" id="nums">
+						<p class="num1" id="num1"></p>
+						<p class="op" id="op"></p>
+						<p class="num2" id="num2"></p>
+						<p id="equal"></p>
+						<p id="result"></p>
+					</div>
+					<div class="point">
+						<p id="points"></p>
+					</div>
+					<p id="status"></p>
+					<input type="number" name="Answer" id="Answer">
+					<button class="button" id="button"  onclick="AnswerValidate()"><span>Submit</span></button>
+					<button class="next" id="next"  onclick="reset()"><span>Next</span></button>
+					<!--<input type="submit" value="Submit" id="submit" onsubmit="result()">-->
+				
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+</body>
+</html>
